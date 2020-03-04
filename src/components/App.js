@@ -32,7 +32,7 @@ class App extends React.Component {
   
   onAdoptPet=(id)=>{
     let ad =this.state.pets.findIndex(e=>e.id==id)
-    ad.isAdopted=true
+    this.state.pets[ad].isAdopted=true
   }
 
   render() {
